@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="CategoryStore" targetNamespace="http://tempuri.org/CategoryStore.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/CategoryStore.xsd" xmlns:mstns="http://tempuri.org/CategoryStore.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Category">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ID" type="xs:int" msdata:AutoIncrement="true" msdata:AutoIncrementStep="1" msdata:AutoIncrementSeed="1" />
+				<xs:element name="Name" type="xs:string" />
+				<xs:element name="AllowDelete" type="xs:boolean" />
+				<xs:element name="ParentID" type="xs:int" />
+				<xs:element name="HasChildren" type="xs:boolean" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

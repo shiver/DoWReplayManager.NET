@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="ReplayStore" targetNamespace="http://tempuri.org/ReplayStore.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/ReplayStore.xsd" xmlns:mstns="http://tempuri.org/ReplayStore.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="Replay">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ID" type="xs:int" msdata:AutoIncrement="true" msdata:AutoIncrementStep="1" msdata:AutoIncrementSeed="1" />
+				<xs:element name="CategoryID" type="xs:int" />
+				<xs:element name="Name" type="xs:string" />
+				<xs:element name="HashCode" type="xs:hexBinary" />
+				<xs:element name="Filename" type="xs:string" />
+				<xs:element name="DateAdded" type="xs:dateTime" />
+				<xs:element name="DateModified" type="xs:dateTime" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Player">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ID" type="xs:int" msdata:AutoIncrementSeed="1" msdata:AutoIncrementStep="1" msdata:AutoIncrement="true" />
+				<xs:element name="Name" type="xs:string" />
+				<xs:element name="ReplayID" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Map">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ID" type="xs:int" msdata:AutoIncrementSeed="1" msdata:AutoIncrementStep="1" msdata:AutoIncrement="true" />
+				<xs:element name="Name" type="xs:string" />
+				<xs:element name="ReplayID" type="xs:int" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
